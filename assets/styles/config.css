@@ -242,6 +242,16 @@ h2 {
 }
 
 
+h3 {
+    color: #000;
+
+    font-family: Kodchasan;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 /* Configurando Links */
 a {
     font-family: "Poppins", sans-serif;
