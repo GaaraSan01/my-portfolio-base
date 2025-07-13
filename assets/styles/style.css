@@ -176,7 +176,27 @@
         stroke: var(--cor-quinternaria);
     }
 }
-.btn-cta-light,
+.btn-cta-light {
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+
+    border-radius: 10px;
+    border: 2px solid var(--cor-sexta);
+    background-color: var(--cor-sexta);
+    color: var(--cor-primaria);
+
+    transition: .3s ease-in;
+}
+
+.btn-cta-light:hover{
+    background: transparent;
+    color: var(--cor-sexta);
+}
+
 .btn-cta-outiline-light {
     display: inline-flex;
     padding: 8px 16px;
@@ -186,23 +206,23 @@
     font-size: 16px;
 
     border-radius: 10px;
-    border: 2px solid var(--cor-quinternaria);
+    border: 2px solid var(--cor-sexta);
     background-color: transparent;
-    color: var(--cor-quinternaria);
+    color: var(--cor-sexta);
 
     transition: .3s ease-in;
 
     span svg {
-        stroke: var(--cor-quinternaria);
+        stroke: var(--cor-sexta);
         transition: .3s ease-in-out;
     }
 }
 
-.btn-cta-light,
+
 .btn-cta-outiline-light:hover{
     background-color: transparent;
     color: var(--cor-primaria);
-    background-color: var(--cor-quinternaria);
+    background-color: var(--cor-sexta);
 
     span svg {
         stroke: var(--cor-primaria);
@@ -295,8 +315,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    p, h2 {
+    p {
         color: var(--cor-quinternaria);
+    }
+
+    h2 {
+        color: var(--cor-sexta);
     }
 
     .links-cta {
@@ -315,7 +339,7 @@
     display: flex;
 }
 
-.cads-solutions {
+.cards-solutions {
     display: flex;
     width: 334px;
     padding: 12px 14px;
@@ -324,7 +348,44 @@
     align-items: flex-start;
     gap: 7px;
 
-    p, h3 {
+    p {
         color: var(--cor-quinternaria);
+    }
+
+    h3 {
+        color: var(--cor-sexta);
+    }
+}
+
+@media(max-width: 1250px){
+    .solutions .container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 959px){
+    .solutions .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .content-01, .content-02 {
+            max-width: 100%;
+            .cards-solutions {
+                width: 50%;
+            }
+        }        
+    }
+}
+
+@media(max-width: 768px ){
+    .solutions .container .content-02 .column-01, 
+    .solutions .container .content-02 .column-02 {
+        flex-direction: column;
+
+        .cards-solutions {
+            width: 100%;
+        }
     }
 }
