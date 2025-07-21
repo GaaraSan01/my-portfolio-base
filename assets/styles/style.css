@@ -176,6 +176,7 @@
         stroke: var(--cor-quinternaria);
     }
 }
+
 .btn-cta-light {
     display: inline-flex;
     padding: 8px 16px;
@@ -192,7 +193,7 @@
     transition: .3s ease-in;
 }
 
-.btn-cta-light:hover{
+.btn-cta-light:hover {
     background: transparent;
     color: var(--cor-sexta);
 }
@@ -219,7 +220,7 @@
 }
 
 
-.btn-cta-outiline-light:hover{
+.btn-cta-outiline-light:hover {
     background-color: transparent;
     color: var(--cor-primaria);
     background-color: var(--cor-sexta);
@@ -298,10 +299,25 @@
     justify-content: center;
 }
 
+@media(max-width: 960px) {
+    .about .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 80px 20px;
+
+        .content-01,
+        .content-02 {
+            width: 100%;
+        }
+    }
+}
+
 /* Solutions */
 .solutions {
     background: url('/assets/images/wallpaper-blue.png') no-repeat center center / cover;
 }
+
 .solutions .container {
     display: flex;
     padding: 140px 0;
@@ -315,6 +331,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     p {
         color: var(--cor-quinternaria);
     }
@@ -335,7 +352,8 @@
 }
 
 /* Cards */
-.column-01, .column-02 {
+.column-01,
+.column-02 {
     display: flex;
 }
 
@@ -357,30 +375,33 @@
     }
 }
 
-@media(max-width: 1250px){
+@media(max-width: 1250px) {
     .solutions .container {
         padding: 20px;
     }
 }
 
-@media (max-width: 959px){
+@media (max-width: 959px) {
     .solutions .container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
 
-        .content-01, .content-02 {
+        .content-01,
+        .content-02 {
             max-width: 100%;
+
             .cards-solutions {
                 width: 50%;
             }
-        }        
+        }
     }
 }
 
-@media(max-width: 768px ){
-    .solutions .container .content-02 .column-01, 
+@media(max-width: 768px) {
+
+    .solutions .container .content-02 .column-01,
     .solutions .container .content-02 .column-02 {
         flex-direction: column;
 
@@ -388,4 +409,117 @@
             width: 100%;
         }
     }
+}
+
+/*Projects*/
+
+.projects {
+    padding: 115px 0;
+
+    h2 {
+        padding-bottom: 30px;
+    }
+
+    .barra-horizontal {
+        height: 3px;
+        width: 100%;
+        background-color: var(--cor-primaria);
+        border-radius: 2px;
+        display: block;
+    }
+
+}
+
+.projects .container .content-01 {
+    padding: 115px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects .container .call-to-action {
+    display: flex;
+    justify-content: center;
+}
+
+/* Card Projects */
+
+.card-project {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    max-width: 548px;
+
+    background: var(--cor-sexta);
+    border-radius: 20px;
+    border: solid 2px var(--cor-primaria);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    .content-01 {
+        padding: 0 !important;
+    }
+
+    .content-02 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .content-cta {
+            .svg-github {
+                stroke: #06141B;
+            }
+
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+}
+
+.barra-vertical {
+    background: var(--cor-primaria);
+    height: 267px;
+    width: 3px;
+    display: block;
+    border-radius: 3px;
+}
+
+/* FAQ */
+.FAQ {
+    min-height: 615px;
+}
+
+.FAQ .container {
+    max-width: 1000px;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+    .content-01 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.acordeon {
+    width: 100%;
+    padding: 3px 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    border: 2px solid #000;
+
+    background: #CCD0CF;
 }

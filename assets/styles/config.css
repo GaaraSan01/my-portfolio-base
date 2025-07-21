@@ -215,6 +215,7 @@ Configuração de fonts
     margin: auto;
 }
 
+
 /* Configurando Titulos */
 
 h1 {
@@ -249,6 +250,16 @@ h3 {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
+    line-height: normal;
+}
+
+h4 {
+    color: #000;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
     line-height: normal;
 }
 
