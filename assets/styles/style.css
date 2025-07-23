@@ -153,6 +153,8 @@
     align-items: center;
     gap: 10px;
     font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 500;
 
     border-radius: 10px;
     border: 2px solid var(--cor-primaria);
@@ -427,7 +429,6 @@
         border-radius: 2px;
         display: block;
     }
-
 }
 
 .projects .container .content-01 {
@@ -490,12 +491,47 @@
     border-radius: 3px;
 }
 
+@media(max-width: 1240px){
+    .barra-vertical {
+        display: none;
+    }
+}
+
+@media(max-width: 1175px){
+    .projects .container .content-01 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-project {
+        max-width: 100%;
+    }
+}
+
 /* FAQ */
+
 .FAQ {
     min-height: 615px;
+    position: relative;
+}
+
+.background-faq {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -8%); 
+    z-index: 1;
+    display: block;
+    width: 679px;
+    height: 679px;
+    flex-shrink: 0;
+    border-radius: 679px;
+    background: #253745;
+    filter: blur(350px);
 }
 
 .FAQ .container {
+    padding: 140px 0;
     max-width: 1000px;
 
     h2 {
@@ -511,6 +547,7 @@
 }
 
 .acordeon {
+    z-index: 2;
     width: 100%;
     padding: 3px 21px;
     display: flex;
@@ -521,5 +558,81 @@
     border-radius: 10px;
     border: 2px solid #000;
 
-    background: #CCD0CF;
+    background: var(--cor-sexta);
+}
+
+
+/* Contact */
+
+.contact .container {
+    display: flex;
+    padding: 140px 0;
+}
+
+.contact .container .content-01,
+.contact .container .content-02 {
+    width: 50%;
+}
+
+.contact .container .content-01 .group-01 {
+    max-width: 586px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    p {
+        max-width: 526px;
+    }
+}
+
+.form-contact {
+    max-width: 530px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--cor-sexta);
+    padding: 40px 32px;
+    margin: auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    h2 {
+        padding-bottom: 25px;
+    }
+}
+
+.form-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-contact form .group-01,
+.form-contact form .group-02,
+.form-contact form .group-03 {
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width: 1240px){
+    .contact .container {
+        padding: 75px 20px;
+    }
+}
+
+@media(max-width: 1160px){
+    .contact .container{
+        flex-direction: column;
+        .content-01{
+            padding-bottom: 30px;
+        }
+        .content-01,
+        .content-02{
+            width: 100%;
+        }
+    }
+    .contact .container .content-01 .group-01 {
+        max-width: 100%;
+        p {
+            max-width: 100%;
+        }     
+    }
 }
