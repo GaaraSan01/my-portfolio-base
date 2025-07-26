@@ -337,3 +337,16 @@ footer .container .content-02 {
     gap: 15px;
     width: 50%;
 }
+
+@media(max-width: 768px){
+    footer .container {
+        flex-direction: column-reverse;
+        gap: 10px;
+        .content-02,
+        .content-01{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

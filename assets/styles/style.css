@@ -379,7 +379,7 @@
 
 @media(max-width: 1250px) {
     .solutions .container {
-        padding: 20px;
+        padding: 50px 20px;
     }
 }
 
@@ -616,6 +616,9 @@
     .contact .container {
         padding: 75px 20px;
     }
+    .FAQ .container {
+        padding: 75px 20px;
+    }
 }
 
 @media(max-width: 1160px){
@@ -629,10 +632,32 @@
             width: 100%;
         }
     }
+    .background-faq {
+        display: none;
+    }
     .contact .container .content-01 .group-01 {
         max-width: 100%;
         p {
             max-width: 100%;
         }     
+    }
+}
+
+@media (max-width: 578px){
+    .card-project {
+        flex-direction: column;
+        gap: 15px;
+
+        .content-01{
+            img{
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 478px){
+    .form-contact form .group-01 {
+        flex-wrap: wrap;
     }
 }
