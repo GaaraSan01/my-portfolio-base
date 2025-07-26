@@ -234,7 +234,7 @@
 
 /* Section Hero */
 .hero {
-    background: url('/assets/images/fundo-hero.jpg') no-repeat center center / cover;
+    background: url('assets/images/fundo-hero.jpg') no-repeat center center / cover;
     background-attachment: fixed;
 }
 
@@ -317,7 +317,7 @@
 
 /* Solutions */
 .solutions {
-    background: url('/assets/images/wallpaper-blue.png') no-repeat center center / cover;
+    background: url('assets/images/wallpaper-blue.png') no-repeat center center / cover;
 }
 
 .solutions .container {

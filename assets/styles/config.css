@@ -145,7 +145,7 @@ Configuração de fonts
 */
 @font-face {
     font-family: "Poppins";
-    src: url('/assets/fonts/Poppins-Regular.ttf');
+    src: url('assets/fonts/Poppins-Regular.ttf');
     font-weight: 400;
     /* Peso para Regular */
     font-style: normal;
@@ -153,7 +153,7 @@ Configuração de fonts
 
 @font-face {
     font-family: "Poppins";
-    src: url('/assets/fonts/Poppins-Medium.ttf');
+    src: url('assets/fonts/Poppins-Medium.ttf');
     font-weight: 500;
     /* Peso para Medium */
     font-style: normal;
@@ -161,7 +161,7 @@ Configuração de fonts
 
 @font-face {
     font-family: "Poppins";
-    src: url('/assets/fonts/Poppins-SemiBold.ttf');
+    src: url('assets/fonts/Poppins-SemiBold.ttf');
     font-weight: 600;
     /* Peso para SemiBold */
     font-style: normal;
@@ -169,7 +169,7 @@ Configuração de fonts
 
 @font-face {
     font-family: "Poppins";
-    src: url('/assets/fonts/Poppins-Bold.ttf');
+    src: url('assets/fonts/Poppins-Bold.ttf');
     font-weight: 700;
     /* Peso para Bold */
     font-style: normal;
@@ -177,7 +177,7 @@ Configuração de fonts
 
 @font-face {
     font-family: "Kodchasan";
-    src: url("/assets/fonts/Kodchasan-Bold.ttf");
+    src: url("assets/fonts/Kodchasan-Bold.ttf");
     font-weight: 700;
     /* Peso para Bold */
     font-style: bold;
@@ -185,7 +185,7 @@ Configuração de fonts
 
 @font-face {
     font-family: "Kodchasan";
-    src: url("/assets/fonts/Kodchasan-Regular.ttf");
+    src: url("assets/fonts/Kodchasan-Regular.ttf");
     font-weight: 400;
     /* Peso para Bold */
     font-style: normal;
@@ -193,7 +193,7 @@ Configuração de fonts
 
 @font-face {
     font-family: "Kodchasan";
-    src: url("/assets/fonts/Kodchasan-Medium.ttf");
+    src: url("assets/fonts/Kodchasan-Medium.ttf");
     font-weight: 500;
     /* Peso para Bold */
     font-style: medium;
@@ -202,7 +202,7 @@ Configuração de fonts
 
 @font-face {
     font-family: "Kodchasan";
-    src: url("/assets/fonts/Kodchasan-SemiBold.ttf");
+    src: url("assets/fonts/Kodchasan-SemiBold.ttf");
     font-weight: 600;
     /* Peso para SemiBold */
     font-style: semi-bold;
