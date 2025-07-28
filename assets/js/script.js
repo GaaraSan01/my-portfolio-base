@@ -9,5 +9,12 @@
     });
 
     // Acordeon
-    
+    const btnAcordeon = document.querySelectorAll('.acordeon');
+    const acordeonContent = document.querySelectorAll('.acordeon-content');
+
+    btnAcordeon.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            acordeonContent[index].classList.toggle('ativa')
+        });
+    });
 })()

@@ -549,11 +549,12 @@
 .acordeon {
     z-index: 2;
     width: 100%;
-    padding: 3px 21px;
+    padding: 10px 21px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    cursor: pointer;
 
     border-radius: 10px;
     border: 2px solid #000;
@@ -561,6 +562,23 @@
     background: var(--cor-sexta);
 }
 
+.acordeon-content {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: .3s ease-in;
+    padding: 0 21px;
+
+    p{
+        color: var(--cor-primaria);
+        font-weight: 500;
+    }
+}
+
+.acordeon-content.ativa {
+    height: 75px;
+    visibility: visible;
+}
 
 /* Contact */
 
