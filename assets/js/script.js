@@ -14,7 +14,8 @@
 
     btnAcordeon.forEach((item, index) => {
         item.addEventListener('click', () => {
-            acordeonContent[index].classList.toggle('ativa')
+            acordeonContent[index].classList.toggle('ativa');
+            item.classList.toggle('ativa');
         });
     });
 })()

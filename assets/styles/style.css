@@ -560,6 +560,17 @@
     border: 2px solid #000;
 
     background: var(--cor-sexta);
+
+    img {
+        transition: all .3s ease-in;
+    }
+}
+
+
+.acordeon.ativa {
+    img {
+        rotate: 180deg;
+    }
 }
 
 .acordeon-content {
@@ -578,6 +589,12 @@
 .acordeon-content.ativa {
     height: 75px;
     visibility: visible;
+}
+
+@media(max-width: 510px){
+    .acordeon-content.ativa {
+        height: 100px;
+    }
 }
 
 /* Contact */
