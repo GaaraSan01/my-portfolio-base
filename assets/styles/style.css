@@ -280,9 +280,28 @@
 }
 
 /* About */
+.about {
+    position: relative;
+    overflow-y: hidden;
+}
+.background-elipse,
+.background-elipse-2{
+    position: absolute;
+    z-index: 1;
+}
 
+.background-elipse {
+    left: 0;
+    bottom: -50px;
+}
+
+.background-elipse-2 {
+    right: 0;
+    top: -200px;
+}
 .about .container {
     display: flex;
+    padding: 140px 0;
     min-height: 500px;
 }
 
@@ -301,6 +320,16 @@
     justify-content: center;
 }
 
+@media(max-width: 1240px){
+    .about .container {
+        padding: 140px 20px;
+
+        .content-02 img{
+            z-index: 2;
+        }
+    }
+}
+
 @media(max-width: 960px) {
     .about .container {
         flex-direction: column-reverse;
@@ -314,6 +343,14 @@
         }
     }
 }
+
+@media(max-width: 768px) {
+    .background-elipse,
+    .background-elipse-2{
+        display: none;
+    }
+}
+
 
 /* Solutions */
 .solutions {
